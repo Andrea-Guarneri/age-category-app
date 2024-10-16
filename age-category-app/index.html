@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Tailwind CSS  -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Favicon standard -->
+  <link rel="icon" href="assets/js-logo.png" type="image/x-icon">
+
+  <title>Age Range Calculator</title>
+</head>
+
+<body class="flex justify-center items-center h-screen">
+
+  <div class="container text-center rounded-lg shadow-xl bg-gray-100 p-6">
+  
+    <!-- Image that will be dynamically changed based on the calculated age range -->
+    <img id="ageImage" alt="Age range" class="mt-4 mb-4 max-h-[650px] my-8 mx-auto" />
+
+    <!-- Paragraph that will display a message to the user -->
+    <p id="ageMessage" class="mt-4 text-4xl font-sans font-semibold"></p>
+
+  </div>
+
+  <!-- JavaScript -->
+  <script src="index.js"></script>
+</body>
+</html>
