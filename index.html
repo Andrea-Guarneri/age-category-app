@@ -17,15 +17,15 @@
   <title>Age Range Calculator</title>
 </head>
 
-<body class="flex justify-center items-center h-screen">
+<body class="flex justify-center items-center min-h-screen bg-gray-50">
 
-  <div class="container text-center rounded-lg shadow-xl bg-gray-100 p-6">
+  <div class="container max-w-xl text-center rounded-lg shadow-xl bg-gray-100 p-6 md:max-w-2xl lg:max-w-3xl">
   
     <!-- Image that will be dynamically changed based on the calculated age range -->
-    <img id="ageImage" alt="Age range" class="mt-4 mb-4 max-h-[650px] my-8 mx-auto" />
+    <img id="ageImage" alt="Age range" class="mt-4 mb-4 w-full max-w-xs md:max-w-md lg:max-w-lg object-cover rounded mx-auto" />
 
     <!-- Paragraph that will display a message to the user -->
-    <p id="ageMessage" class="mt-4 text-4xl font-sans font-semibold"></p>
+    <p id="ageMessage" class="mt-4 text-2xl sm:text-3xl md:text-4xl font-sans font-semibold text-gray-800"></p>
 
   </div>
 
