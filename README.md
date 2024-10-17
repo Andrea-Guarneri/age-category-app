@@ -10,6 +10,10 @@ I’m building a solid foundation in JavaScript by working on real-world solutio
 
 **Age Category App** is a JavaScript application that classifies users into age ranges based on their inputted age. It displays the corresponding age category (like Baby, Teenager, Elderly), a dynamic image representing that age group, and changes the background color for a visually engaging experience. The app is built using **HTML**, **CSS**, and **Tailwind CSS**, with built-in error handling for invalid age inputs.
 
+### 🌐 Live Demo
+
+You can test and view this app directly on Netlify: [Age Category App](https://age-category.netlify.app/)
+
 ### 🌟 Key Features
 
 - **User Input**: Prompts users to enter their age via `prompt()`.
