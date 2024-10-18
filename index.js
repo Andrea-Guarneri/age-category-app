@@ -30,7 +30,7 @@ If the person's age is invalid, you must also point out an error and include an 
 // Age Range Calculator
 
 // Asks the user for their age and converts the response to a number
-var userAge = Number(prompt("Qual é a sua idade?"));
+var userAge = Number(prompt("How old are you?"));
 
 // Variables that store the paths of the images corresponding to each age group
 var imgBaby = "assets/baby.png";
