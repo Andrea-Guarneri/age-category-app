@@ -61,67 +61,56 @@ var bgSeniorAdvanced = "bg-zinc-800";
 var bgError = "bg-red-600";
 
 // Initialize the variables that will be used to store the ratings
-var userAgeRange = null;               // Stores the corresponding age range
-var userAgeImage = null;               // Store the corresponding image
-var userAgeBackground = " ";           // Store the background color
+var userAgeRange = null; // Stores the corresponding age range
+var userAgeImage = null; // Store the corresponding image
+var userAgeBackground = " "; // Store the background color
 // The userAgeBackground variable is initialized with an empty string (" ") to avoid concatenation errors or unexpected behavior by ensuring an initial value.
 
 // Conditional to check user age range and assign values
 if (userAge >= 0 && userAge < 3) {
-  userAgeRange = "Baby";                    
-  userAgeImage = imgBaby;                    
+  userAgeRange = "Baby";
+  userAgeImage = imgBaby;
   userAgeBackground += bgBaby;
-
 } else if (userAge >= 3 && userAge < 7) {
   userAgeRange = "Small Child (early childhood)";
   userAgeImage = imgChildSmall;
   userAgeBackground += bgChildSmall;
-
 } else if (userAge >= 7 && userAge < 13) {
   userAgeRange = "Child";
   userAgeImage = imgChild;
   userAgeBackground += bgChild;
-
 } else if (userAge >= 13 && userAge < 15) {
   userAgeRange = "Pre-teen";
   userAgeImage = imgPreTeen;
   userAgeBackground += bgPreTeen;
-
 } else if (userAge >= 15 && userAge < 18) {
   userAgeRange = "Teenager";
   userAgeImage = imgTeen;
   userAgeBackground += bgTeen;
-
 } else if (userAge >= 18 && userAge < 25) {
   userAgeRange = "Young Adult";
   userAgeImage = imgYoungAdult;
   userAgeBackground += bgYoungAdult;
-
 } else if (userAge >= 25 && userAge < 40) {
   userAgeRange = "Early Adult";
   userAgeImage = imgAdultYoung;
   userAgeBackground += bgAdultYoung;
-
 } else if (userAge >= 40 && userAge < 60) {
   userAgeRange = "Adult";
   userAgeImage = imgAdult;
   userAgeBackground += bgAdult;
-
 } else if (userAge >= 60 && userAge < 75) {
   userAgeRange = "Young Elderly (third age)";
   userAgeImage = imgSeniorYoung;
   userAgeBackground += bgSeniorYoung;
-
 } else if (userAge >= 75 && userAge < 85) {
   userAgeRange = "Elderly";
   userAgeImage = imgSenior;
   userAgeBackground += bgSenior;
-
 } else if (userAge >= 85 && userAge < 200) {
   userAgeRange = "Advanced Elderly (longevity)";
   userAgeImage = imgSeniorAdvanced;
   userAgeBackground += bgSeniorAdvanced;
-
 } else {
   // Error case: Invalid age (less than 0 or greater than 200)
   userAgeRange = "erro";
@@ -136,7 +125,7 @@ document.body.className += userAgeBackground;
 document.getElementById("ageImage").setAttribute("src", userAgeImage);
 
 // Displays the message with the age range or error
-document.getElementById("ageMessage").innerText = (userAgeRange === "erro") ?
-  "Invalid age. Please enter a value between 0 and 200." :
-  "Your age range is: " + userAgeRange;
-
+document.getElementById("ageMessage").innerText =
+  userAgeRange === "erro"
+    ? "Invalid age. Please enter a value between 0 and 200."
+    : "Your age range is: " + userAgeRange;
